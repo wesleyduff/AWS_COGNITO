@@ -14,7 +14,7 @@ __Structure__
 - Processed files are found in the ```application/dist``` directory. 
 
 __NPM Scripts__
-- ```javascript 
+```javascript 
 //runs the prebuild and build steps.
 //uses postcss and cssnext to compile the core.css file
 //then runs webpack and webpack creats the JS bundle and moves the index.html file over to the dist folder.
