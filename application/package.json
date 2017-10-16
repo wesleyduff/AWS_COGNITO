@@ -1,0 +1,37 @@
+{
+  "name": "aws_cognito_boilerplate",
+  "version": "1.0.0",
+  "description": "Base spinup to get AWS Cognito up and running with Cognito Sync. Work offline and sync devices when device receives connectivity. Sync devices that are logged in across the board. Use Cognito's Datasets to save and retrieve data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wesleyduff/AWS_COGNITO.git"
+  },
+  "keywords": [
+    "AWS",
+    "Cognito",
+    "Sync",
+    "Synchronize",
+    "AWS",
+    "Cognito",
+    "AWS",
+    "Cognito",
+    "Sync",
+    "AWS",
+    "Cognito",
+    "Syncronize",
+    "Express",
+    "Mongo",
+    "Mongoose",
+    "Authentication"
+  ],
+  "author": "Wesley Duff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wesleyduff/AWS_COGNITO/issues"
+  },
+  "homepage": "https://github.com/wesleyduff/AWS_COGNITO#readme"
+}
