@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "prebuild": "npm-run-all build-core-css",
-    "build": "webpack -d --config webpack.config.js --progress --watch",
+    "build": "webpack -d --config webpack.config.js --progress",
     "build-core-css": "postcss -u postcss-import -u postcss-cssnext -o dist/assets/css/core_build.css src/public/css/core.css"
   },
   "repository": {
@@ -39,6 +39,7 @@
   "homepage": "https://github.com/wesleyduff/AWS_COGNITO#readme",
   "devDependencies": {
     "babel-loader": "^7.1.2",
+    "copy-webpack-plugin": "^4.1.1",
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.5",
     "jest": "^21.2.1",
