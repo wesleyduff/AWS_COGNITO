@@ -4,7 +4,10 @@
   "description": "Base spinup to get AWS Cognito up and running with Cognito Sync. Work offline and sync devices when device receives connectivity. Sync devices that are logged in across the board. Use Cognito's Datasets to save and retrieve data.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prebuild": "npm-run-all build-core-css",
+    "build": "webpack -d --config webpack.config.js --progress --watch",
+    "build-core-css": "postcss -u postcss-import -u postcss-cssnext -o dist/assets/css/core_build.css src/public/css/core.css"
   },
   "repository": {
     "type": "git",
@@ -33,5 +36,23 @@
   "bugs": {
     "url": "https://github.com/wesleyduff/AWS_COGNITO/issues"
   },
-  "homepage": "https://github.com/wesleyduff/AWS_COGNITO#readme"
+  "homepage": "https://github.com/wesleyduff/AWS_COGNITO#readme",
+  "devDependencies": {
+    "babel-loader": "^7.1.2",
+    "css-loader": "^0.28.7",
+    "file-loader": "^1.1.5",
+    "jest": "^21.2.1",
+    "npm-run-all": "^4.1.1",
+    "postcss-cli": "^4.1.1",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^11.0.0",
+    "postcss-loader": "^2.0.8",
+    "postcss-reporter": "^5.0.0",
+    "style-loader": "^0.19.0",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.7.1"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.133.0"
+  }
 }
