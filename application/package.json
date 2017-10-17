@@ -4,6 +4,7 @@
   "description": "Base spinup to get AWS Cognito up and running with Cognito Sync. Work offline and sync devices when device receives connectivity. Sync devices that are logged in across the board. Use Cognito's Datasets to save and retrieve data.",
   "main": "index.js",
   "scripts": {
+    "start": "cd server && node app",
     "test": "jest",
     "prebuild": "npm-run-all build-core-css",
     "build": "webpack -d --config webpack.config.js --progress",
@@ -55,8 +56,16 @@
   },
   "dependencies": {
     "aws-sdk": "^2.133.0",
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.2",
+    "compression": "^1.7.1",
+    "connect-assets": "^5.4.0",
+    "cookie-parser": "^1.4.3",
     "express": "^4.16.2",
+    "express-flash": "0.0.2",
+    "express-session": "^1.15.6",
+    "express-validator": "^4.2.1",
+    "morgan": "^1.9.0",
     "swig": "^1.4.2"
   }
 }
